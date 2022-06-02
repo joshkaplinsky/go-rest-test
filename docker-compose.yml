@@ -1,0 +1,10 @@
+version: '3'
+services:
+  go-rest-test:
+    image: go-rest-test:latest
+    expose:
+      - 5000
+    ports:
+      - "5000:5000"
+    env_file:
+      - .env.local
